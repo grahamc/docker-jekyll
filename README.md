@@ -3,12 +3,12 @@
 Use example:
 
 ```
-sudo docker run --rm -v '$(pwd):/src' grahamc/jekyll build
+sudo docker run --rm -v "$(pwd):/src" grahamc/jekyll build
 ```
 
 or for repeated calls:
 
 ```
-alias jekyll="sudo docker run --rm -v '$(pwd):/src' grahamc/jekyll"
+alias jekyll='sudo docker run --rm -v "$(pwd):/src" grahamc/jekyll'
 jekyll build
 ```
