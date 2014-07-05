@@ -20,3 +20,8 @@ run as a background daemon:
 ```
 sudo docker run -d --rm -v "$PWD:/src" -p 4000:4000 grahamc/jekyll serve
 ```
+
+## Goodies
+ - Supports pygments syntax highlighting
+ - Supports RDiscount
+ - Supports Kramdown
