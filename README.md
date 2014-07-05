@@ -15,5 +15,5 @@ jekyll build
 
 run as a server:
 ```
-docker run -d -v "$(pwd):/src" -p 4000:4000 grahamc/jekyll serve
+sudo docker run -d -v "$(pwd):/src" -p 4000:4000 grahamc/jekyll serve
 ```
