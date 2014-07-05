@@ -2,7 +2,7 @@ FROM ruby
 MAINTAINER graham@grahamc.com
 
 RUN apt-get update
-RUN apt-get install -y node python-pygments blahtexml
+RUN apt-get install -y node python-pygments blahtexml dvips
 
 RUN gem install jekyll rdiscount kramdown
 
