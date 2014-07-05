@@ -20,7 +20,6 @@ sudo docker run -d -v "$(pwd):/src" -p 4000:4000 grahamc/jekyll serve
 ```
 
 ## Goodies
- - Supports blahtex
  - Supports pygments syntax highlighting
  - Supports RDiscount
  - Supports Kramdown
