@@ -25,3 +25,5 @@ sudo docker run -d --rm -v "$PWD:/src" -p 4000:4000 grahamc/jekyll serve
  - Supports pygments syntax highlighting
  - Supports RDiscount
  - Supports Kramdown
+ - Supports Github Pages
+ - Supports Jekyll Redirect From
