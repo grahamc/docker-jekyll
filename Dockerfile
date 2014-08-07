@@ -1,10 +1,11 @@
 FROM ruby
 MAINTAINER graham@grahamc.com
 
-RUN apt-get update; \
+RUN apt-get update && \
   apt-get install -y \
   node \
-  python-pygments
+  python-pygments \
+  && apt-get clean && rm -rf /var/lib/apt/lists/
 
 RUN gem install \
   jekyll \
