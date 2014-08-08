@@ -8,11 +8,11 @@ RUN apt-get update && \
   && apt-get clean && rm -rf /var/lib/apt/lists/
 
 RUN gem install \
-  jekyll \
-  rdiscount \
-  kramdown \
   github-pages \
+  jekyll \
   jekyll-redirect-from \
+  kramdown \
+  rdiscount \
   rouge
 
 VOLUME /src
