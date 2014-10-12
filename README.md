@@ -28,3 +28,8 @@ sudo docker run -d --rm -v "$PWD:/src" -p 4000:4000 grahamc/jekyll serve
  - Supports Kramdown
  - Supports RDiscount
  - Supports Rouge
+
+
+# License: Public Domain
+
+Do what you want!
