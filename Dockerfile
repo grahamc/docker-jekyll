@@ -1,4 +1,4 @@
-FROM ruby
+FROM ruby:2.1
 MAINTAINER graham@grahamc.com
 
 RUN apt-get update \
