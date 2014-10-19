@@ -18,7 +18,7 @@ jekyll serve
 
 run as a background daemon:
 ```
-sudo docker run -d --rm -v "$PWD:/src" -p 4000:4000 grahamc/jekyll serve
+sudo docker run -d -v "$PWD:/src" -p 4000:4000 grahamc/jekyll serve
 ```
 
 ## Goodies
