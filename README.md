@@ -5,25 +5,25 @@ Docker Hub: <https://registry.hub.docker.com/u/grahamc/jekyll/>
 Use example:
 
 ```
-sudo docker run --rm -v "$PWD:/src" grahamc/jekyll build
+sudo docker run --rm -v "$PWD:/data" grahamc/jekyll build
 ```
 
 or for repeated calls:
 
 ```
-alias jekyll='sudo docker run --rm -v "$PWD:/src" -p 4000:4000 grahamc/jekyll'
+alias jekyll='sudo docker run --rm -v "$PWD:/data" -p 4000:4000 grahamc/jekyll'
 jekyll build
 jekyll serve
 ```
 
 run as a server with port forwarding:
 ```
-sudo docker run --rm -v "$PWD:/src" -p 4000:4000 grahamc/jekyll serve
+sudo docker run --rm -v "$PWD:/data" -p 4000:4000 grahamc/jekyll serve
 ```
 
 as a background daemon:
 ```
-sudo docker run -d -v "$PWD:/src" -p 4000:4000 grahamc/jekyll serve
+sudo docker run -d -v "$PWD:/data" -p 4000:4000 grahamc/jekyll serve
 ```
 
 ## Goodies

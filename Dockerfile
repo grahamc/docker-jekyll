@@ -19,6 +19,6 @@ RUN gem install \
 
 EXPOSE 4000
 
-WORKDIR /src
+WORKDIR /data
 ENTRYPOINT ["jekyll"]
 
