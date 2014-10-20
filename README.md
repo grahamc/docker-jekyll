@@ -16,7 +16,12 @@ jekyll build
 jekyll serve
 ```
 
-run as a background daemon:
+run as a server with port forwarding:
+```
+sudo docker run --rm -v "$PWD:/src" -p 4000:4000 grahamc/jekyll serve
+```
+
+as a background daemon:
 ```
 sudo docker run -d -v "$PWD:/src" -p 4000:4000 grahamc/jekyll serve
 ```
