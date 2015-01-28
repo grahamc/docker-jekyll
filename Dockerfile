@@ -10,7 +10,7 @@ RUN apt-get update \
 
 RUN gem install \
   github-pages \
-  jekyll \
+  jekyll --pre \
   jekyll-redirect-from \
   kramdown \
   rdiscount \
