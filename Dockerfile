@@ -21,4 +21,4 @@ EXPOSE 4000
 
 WORKDIR /src
 ENTRYPOINT ["jekyll"]
-
+COMMAND ['serve', '-H', '0.0.0.0']
