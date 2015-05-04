@@ -4,22 +4,16 @@ Docker Hub: <https://registry.hub.docker.com/u/grahamc/jekyll/>
 
 Use example:
 
-```
-sudo docker run --rm -v "$PWD:/src" grahamc/jekyll build
-```
-
-or for repeated calls:
-
-```
-alias jekyll='sudo docker run --rm -v "$PWD:/src" -p 4000:4000 grahamc/jekyll'
-jekyll build
-jekyll serve -H 0.0.0.0
-```
+    docker run --rm -v "$PWD:/src" grahamc/jekyll
 
 run as a background daemon:
-```
-sudo docker run -d -v "$PWD:/src" -p 4000:4000 grahamc/jekyll serve -H 0.0.0.0
-```
+
+    docker run -d -v "$PWD:/src" -p 4000:4000 grahamc/jekyll
+
+By default jekyll will be invoked with the command `serve -H 0.0.0.0`, which you can override, e.g.:
+
+    docker run "$PWD:/src" grahamc/jekyll new .
+
 
 ## Goodies
  - Supports pygments syntax highlighting
